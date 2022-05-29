@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../../../public/fonts/Gilroy-ExtraBold.otf');
+}
+
+// Var Config
+$backgroundPrimary: #1C1C21;
+$backgroundSecondary: #18181D;
+$backgroundHover: #323237;
+$altHover: #2c2c32;
+$backgroundAlt: #232328;
+
+//////////////////////////////////////////////////
+///////////////       HOME       /////////////////
+//////////////////////////////////////////////////
+@import './components/_home';
+
+//////////////////////////////////////////////////
+///////////////       FORUMS       ///////////////
+//////////////////////////////////////////////////
+@import './components/_forums';
+
+//////////////////////////////////////////////////
+///////////////       STORE       ////////////////
+//////////////////////////////////////////////////
+@import './components/_store';
+
+//////////////////////////////////////////////////
+///////////////       GLOBALS       //////////////
+//////////////////////////////////////////////////
+@import './components/_misc';
+@import './components/_rewrites';
+@import './components/_bans';
+
+.bg-primary-accent {
+  background-color: var(--Accent_Color) !important;
+}
+
+a {
+  color: var(--Accent_Color);
+  &:hover {
+    color: var(--Accent_Background);
+  }
+}
+
+.answers {
+  .progress {
+    height: 30px;
+    border-radius: .25rem;
+    background-color: $backgroundHover;
+    .progress-bar {
+      color: white !important;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+
+  }
+  .progressSort {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.tox-tinymce {
+  border-radius: 10px !important;
+  border: 0.5px solid #ccc !important;
+}
+
+.tox-statusbar__path-item, .tox-statusbar__wordcount {
+  color: black !important;
+}
+
+.tox-statusbar, .tox-toolbar__primary {
+  background-color: #ccc !important;
+}
+
+.tox-edit-area__iframe {
+  background-color: #323237 !important;
+}
+
+.tox-toolbar__group {
+  color: white !important;
+}
+
+.text-accent {
+  color: var(--Accent_Color);
+}
+
+.text-background {
+  color: var(--Accent_Background);
+}
+
+.bg-accent {
+  background-color: var(--Accent_Color);
+}
+
+.bg-background {
+  background-color: var(--Accent_Background);
+}
+
+.btn-background {
+  background-color: var(--Accent_Background) !important;
+  color: var(--Accent_Color) !important;
+
+  &:hover, &:focus {
+    background-color: var(--Accent_Color) !important;
+    color: white !important;
+  }
+}
+
+.btn-accent {
+  background-color: var(--Accent_Color) !important;
+  color: white !important;
+
+  &:hover, &:focus {
+    background-color: var(--Accent_Background) !important;
+    color: white !important;
+  }
+}
+
+.btn-outline-accent {
+  background: none;
+  border-color: var(--Accent_Color);
+  color: var(--Accent_Color);
+
+  &:hover, &:active {
+    background: var(--Accent_Color);
+    color: #fff;
+  }
+}
+
+.bg-primary-accent {
+  background-color: var(--Accent_Color) !important;
+}
+
+.badge-accent {
+  background-color:var(--Accent_Color);
+  color:#fff
+}
